@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"
+    />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        /* background-color: blue; */
+        margin: 0;
+        padding: 20px;
+      }
+      .box {
+        max-width: 800px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px;
+        margin-top: 6rem;
+      }
+      .image-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .image-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .image-card .name {
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+      }
+      .heading {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        margin-top: 6rem;
+      }
+      /* Default button styles */
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 3rem;
+      }
+
+      .btn-primary {
+        background-color: orange;
+      }
+
+      /* Icon styles */
+      .btn i {
+        margin-right: 5px;
+      }
+
+      /* Button alignment */
+      .d-flex {
+        display: flex;
+        justify-content: center; /* Center align the items horizontally */
+        align-items: center;
+      }
+
+      /* Mobile screen styles */
+      @media screen and (max-width: 768px) {
+        .btn {
+          font-size: 14px;
+          padding: 8px 16px;
+        }
+      }
+    </style>
+
+    <title>Products - Lucky Outfit & Accessories</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./assets/img/lofa-logo.png" alt="Logo"
+        /></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="product.html" class="nav__link">Product List</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">About US</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact US</a>
+            </li>
+
+            <!-- <li class="nav__item">
+              <a href="#" class="nav__link">Community</a>
+            </li> -->
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__actions">
+          <!-- <i class="ri-heart-3-line"></i>
+          <i class="ri-shopping-cart-line"></i> -->
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <body>
+      <h1 class="heading">Our Products</h1>
+      <div class="box">
+        <div class="image-card">
+          <img src="./assets/img/convocoat.png.png" alt="Image 1" />
+          <div class="name">Convocation Gown</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/lab-coat1.png" alt="Image 2" />
+          <div class="name">Lab Coat</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/convocap.png" alt="Image 3" />
+          <div class="name">Convocation Cap</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/shirts.png" alt="Image 3" />
+          <div class="name">Shirts</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/tshirt.png" alt="Image 3" />
+          <div class="name">T-Shirts</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/trouser.png" alt="Image 3" />
+          <div class="name">Trowser</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/degree-folder.png" alt="Image 3" />
+          <div class="name">Degree Folder/Holder</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/blazer.png" alt="Image 3" />
+          <div class="name">Blazer / Coat-Pant</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/sash.png" alt="Image 3" />
+          <div class="name">Sash</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/Hoods.png" alt="Image 3" />
+          <div class="name">Hoods</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/cravats.png" alt="Image 3" />
+          <div class="name">Cravats</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/tie.png" alt="Image 3" />
+          <div class="name">Tie</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/bow.png" alt="Image 3" />
+          <div class="name">Bow</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/trophies.png" alt="Image 3" />
+          <div class="name">Trophies / Medals</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/schoolDress.png" alt="Image 3" />
+          <div class="name">Uniform for Schools & colleges</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/corpogifts.png" alt="Image 3" />
+          <div class="name">Corporate Gifts</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/corporateDress.jpg" alt="Image 3" />
+          <div class="name">Corporate Dresses</div>
+        </div>
+        <div class="image-card">
+          <img src="./assets/img/printing.jpg" alt="Image 3" />
+          <div class="name">Printing</div>
+        </div>
+
+        <!-- Add more image cards as needed -->
+      </div>
+      <div class="pt-3 py-xl-0 d-flex justify-content-center">
+        <a href="https://wa.me/918802279973" class="text-decoration-none px-2">
+          <button class="btn btn-primary d-flex">
+            <i class="fas fa-shopping-bag text-white"></i>&nbsp; Order
+          </button>
+        </a>
+      </div>
+      <!-- Bootstrap JS CDN -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
