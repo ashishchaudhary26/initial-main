@@ -146,6 +146,7 @@ img {
 .nav__link {
   color: var(--black-color);
   font-weight: var(--font-semi-bold);
+  font-size: 1.2rem;
 }
 
 .nav__link:hover {
@@ -167,6 +168,31 @@ img {
 .bg-header {
   background-color: var(--first-color);
   box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.1);
+}
+
+/* order button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff; /* Default button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #0056b3; /* Button color on hover */
+}
+
+/* Active effect */
+.btn:active {
+  background-color: #004080; /* Button color when clicked */
 }
 
 /*=============== HOME ===============*/

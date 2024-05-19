@@ -34,7 +34,7 @@
     />
     <style>
       body {
-        font-family: Arial, sans-serif;
+        /* font-family: Arial, sans-serif; */
         margin: 0;
         padding: 0;
         background-color: hsl(34, 52%, 54%);
@@ -70,29 +70,7 @@
       .contact-info a:hover {
         text-decoration: underline;
       }
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-        color: #fff;
-        background-color: #007bff; /* Default button color */
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
 
-      /* Hover effect */
-      .btn:hover {
-        background-color: #0056b3; /* Button color on hover */
-      }
-
-      /* Active effect */
-      .btn:active {
-        background-color: #004080; /* Button color when clicked */
-      }
       .map {
         width: 100%; /* Make the map take up the full width of its container */
         height: 400px; /* Set the initial height of the map */
@@ -100,7 +78,9 @@
         border-radius: 8px; /* Add some border radius for rounded corners */
         margin-top: 20px; /* Add some spacing above the map */
       }
-
+      p {
+        font-family: Arial, sans-serif;
+      }
       /* Media Query for Responsive Layout */
       @media (max-width: 600px) {
         .sec-container {
@@ -151,7 +131,16 @@
             <li class="nav__item">
               <a href="review.html" class="nav__link">Reviews</a>
             </li>
-
+            <div class="pt-3 py-xl-0 d-flex justify-content-center">
+              <a
+                href="https://wa.me/918802279973"
+                class="text-decoration-none px-2"
+              >
+                <button class="btn btn-primary d-flex">
+                  <i class="fas fa-shopping-bag text-white"></i>&nbsp; Order
+                </button>
+              </a>
+            </div>
             <!-- <li class="nav__item">
               <a href="#" class="nav__link">Community</a>
             </li> -->

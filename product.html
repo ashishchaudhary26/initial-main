@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <style>
       body {
-        font-family: Arial, sans-serif;
+        /* font-family: Arial, sans-serif; */
         /* background-color: blue; */
         margin: 0;
         padding: 20px;
@@ -64,38 +64,26 @@
         font-size: 24px;
         margin-top: 6rem;
       }
-      /* Default button styles */
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-        color: #fff;
-        background-color: #007bff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 3rem;
-      }
-
-      .btn-primary {
-        background-color: orange;
-      }
-
-      /* Icon styles */
-      .btn i {
-        margin-right: 5px;
-      }
 
       /* Button alignment */
-      .d-flex {
+      /* .d-flex {
         display: flex;
-        justify-content: center; /* Center align the items horizontally */
+        justify-content: center;
         align-items: center;
+      } */
+
+      .name {
+        font-family: Arial, sans-serif;
       }
 
+      .gown {
+        text-align: left;
+        margin-left: 30px;
+      }
+      /* .nav__link {
+        font-weight: var(--font-semi-bold);
+        font-size: 1.2rem;
+      } */
       /* Mobile screen styles */
       @media screen and (max-width: 768px) {
         .btn {
@@ -136,7 +124,16 @@
             <li class="nav__item">
               <a href="review.html" class="nav__link">Reviews</a>
             </li>
-
+            <div class="pt-3 py-xl-0 d-flex justify-content-center">
+              <a
+                href="https://wa.me/918802279973"
+                class="text-decoration-none px-2"
+              >
+                <button class="btn btn-primary d-flex">
+                  <i class="fas fa-shopping-bag text-white"></i>&nbsp; Order
+                </button>
+              </a>
+            </div>
             <!-- <li class="nav__item">
               <a href="#" class="nav__link">Community</a>
             </li> -->
@@ -163,90 +160,135 @@
       <h1 class="heading">Our Products</h1>
       <div class="box">
         <div class="image-card">
-          <img src="./assets/img/convocoat.png.png" alt="Image 1" />
-          <div class="name">Convocation Gown</div>
+          <img
+            onclick="order()"
+            src="./assets/img/convocoat.png.png"
+            alt="Image 1"
+          />
+          <div class="name">
+            Convocation Gown
+            <li class="gown">Bachelor's Gown</li>
+            <li class="gown">Master's Gown</li>
+            <li class="gown">Doctoral Gown</li>
+            <li class="gown">Faculty and Administrative Gowns</li>
+          </div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/lab-coat1.png" alt="Image 2" />
+          <img
+            onclick="order()"
+            on
+            src="./assets/img/lab-coat1.png"
+            alt="Image 2"
+          />
           <div class="name">Lab Coat</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/convocap.png" alt="Image 3" />
+          <img
+            onclick="order()"
+            src="./assets/img/convocap.png"
+            alt="Image 3"
+          />
           <div class="name">Convocation Cap</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/shirts.png" alt="Image 3" />
+          <img onclick="order()" src="./assets/img/shirts.png" alt="Image 3" />
           <div class="name">Shirts</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/tshirt.png" alt="Image 3" />
+          <img onclick="order()" src="./assets/img/tshirt.png" alt="Image 3" />
           <div class="name">T-Shirts</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/trouser.png" alt="Image 3" />
+          <img onclick="order()" src="./assets/img/trouser.png" alt="Image 3" />
           <div class="name">Trowser</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/degree-folder.png" alt="Image 3" />
+          <img
+            onclick="order()"
+            src="./assets/img/degree-folder.png"
+            alt="Image 3"
+          />
           <div class="name">Degree Folder/Holder</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/blazer.png" alt="Image 3" />
+          <img onclick="order()" src="./assets/img/blazer.png" alt="Image 3" />
           <div class="name">Blazer / Coat-Pant</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/sash.png" alt="Image 3" />
+          <img onclick="order()" src="./assets/img/sash.png" alt="Image 3" />
           <div class="name">Sash</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/Hoods.png" alt="Image 3" />
+          <img onclick="order()" src="./assets/img/Hoods.png" alt="Image 3" />
           <div class="name">Hoods</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/cravats.png" alt="Image 3" />
+          <img onclick="order()" src="./assets/img/cravats.png" alt="Image 3" />
           <div class="name">Cravats</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/tie.png" alt="Image 3" />
+          <img onclick="order()" src="./assets/img/tie.png" alt="Image 3" />
           <div class="name">Tie</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/bow.png" alt="Image 3" />
+          <img onclick="order()" src="./assets/img/bow.png" alt="Image 3" />
           <div class="name">Bow</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/trophies.png" alt="Image 3" />
+          <img
+            onclick="order()"
+            src="./assets/img/trophies.png"
+            alt="Image 3"
+          />
           <div class="name">Trophies / Medals</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/schoolDress.png" alt="Image 3" />
+          <img
+            onclick="order()"
+            src="./assets/img/schoolDress.png"
+            alt="Image 3"
+          />
           <div class="name">Uniform for Schools & colleges</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/corpogifts.png" alt="Image 3" />
+          <img
+            onclick="order()"
+            src="./assets/img/corpogifts.png"
+            alt="Image 3"
+          />
           <div class="name">Corporate Gifts</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/corporateDress.jpg" alt="Image 3" />
+          <img
+            onclick="order()"
+            src="./assets/img/corporateDress.jpg"
+            alt="Image 3"
+          />
           <div class="name">Corporate Dresses</div>
         </div>
         <div class="image-card">
-          <img src="./assets/img/printing.jpg" alt="Image 3" />
+          <img
+            onclick="order()"
+            src="./assets/img/printing.jpg"
+            alt="Image 3"
+          />
           <div class="name">Printing</div>
         </div>
 
         <!-- Add more image cards as needed -->
       </div>
-      <div class="pt-3 py-xl-0 d-flex justify-content-center">
-        <a href="https://wa.me/918802279973" class="text-decoration-none px-2">
-          <button class="btn btn-primary d-flex">
-            <i class="fas fa-shopping-bag text-white"></i>&nbsp; Order
-          </button>
-        </a>
-      </div>
+
       <!-- Bootstrap JS CDN -->
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
+    <!-- js code for whatsapp -->
+    <script>
+      function order() {
+        var url = "https://wa.me/" + 918802279973;
+        // Open the URL in a new tab/window
+        window.open(url, "_blank");
+      }
+    </script>
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
